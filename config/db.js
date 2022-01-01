@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 // const keys = require('./keys');
-const mongoURI = 'mongodb+srv://menna:menna1234@cluster0.rdkjx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const keys = require('../config/keys');
 
 const connectDB = async() =>{
-    await mongoose.connect(mongoURI, {
+    await mongoose.connect(keys.mongoURI, {
         useUnifiedTopology:true,
         useNewUrlParser:true,
     });

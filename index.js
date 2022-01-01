@@ -19,12 +19,15 @@ connectDB();
 const app = express();
 
 app.use(bodyParser.json());
+//maintain a asession of any coming request
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000,
     keys: [keys.cookieKey]
   })
 );
+
+//OAuth 
 app.use(passport.initialize());
 app.use(passport.session());
 

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const requireLogin = require('../middlewares/requireLogin');
 const clearCache = require('../middlewares/clearCache');
+const { json } = require('body-parser');
 
 const Blog = mongoose.model('Blog');
 
@@ -41,3 +42,4 @@ module.exports = (app) => {
     }
   });
 };
+
