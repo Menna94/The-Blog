@@ -7,7 +7,7 @@ beforeEach(async()=>{
     //page is our proxy
     page = await Page.build();
     //navigate to the app
-    await page.goto('localhost:3000');
+    await page.goto('http://localhost:3000');
 })
 
 afterEach(async()=>{
