@@ -4,6 +4,6 @@ module.exports = {
   googleClientSecret: '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',
   cookieKey: '123123123',
   redisUrl :'redis://127.0.0.1:6379',
-  accessKeyId: 'AKIA54QBQBNMZJBEZ3TC',
-  secretAccessKey:'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'
+  // accessKeyId: 'AKIA54QBQBNMZJBEZ3TC',
+  // secretAccessKey:'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'
 };
